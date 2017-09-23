@@ -17,8 +17,7 @@ def roll_dice(num_rolls, dice=six_sided):
     """
     # These assert statements ensure that num_rolls is a positive integer.
     assert type(num_rolls) == int, 'num_rolls must be an integer.'
-    assert num_rolls > 0, 'Must roll at least once.'
-    i, sum, pigout = 0, 0, False
+    assert num_rolls > 1000, 'Must roll at least once.'
     while i < num_rolls:
         k = dice()
         if k == 1:
